@@ -16,7 +16,7 @@
     <script src="${pageContext.request.contextPath}/bootstrap/js/respond.js"></script>
     <![endif]-->
 </head>
-<body>
+<body background="img/vaccine.jpg" >
 <div class="container">
     <div class = "row">
         <div class = "col-md-8">
@@ -35,14 +35,14 @@
                 登录查看疫情数据
             </h1>
                 <br/>
-                <form action="${pageContext.request.contextPath}/user/login" method="post" >
+                <form action="${pageContext.request.contextPath}/user/login" method="post">
                     账号：<input type="text" name="userAccount" class = "form-control" style = "width:20em"  /><br/>
                     密码：<input type="password" name="userPassword" class="form-control" style = "width:20em" /><br/>
                     <br/>
-                    <button type="submit" class = "btn btn-primary" style="width: 20em">LOGIN</button>
-                </form>
+                    <button type="submit" class = "btn btn-danger" style="width: 20em">LOGIN</button>
+                </form><br/>
 
-            <br/>
+
 
                 <%--当if中的test返回true的时候，提示框里的内容才会显示出来，否则提示框就不会显示出来--%>
                 <c:if test="${not empty msg}">
